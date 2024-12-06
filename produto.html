@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="processa_produtos.php" method="POST">
+    <label for="produto1">Produto 1:</label>
+    <input type="text" name="produtos[0][nome]" id ="produto1" placeholder="Nome">
+    <input type="number" name="produtos[0][quantidade]" placeholder="Quantidade">
+    <input type="number" step="0.01" name="produtos[0][preco]" placeholder="Preço Unitário">
+    <br><br>
+    <label for="produto2">Produto 2:</label>
+    <input type="text" name="produtos[1][nome]" id ="produto2" placeholder="Nome">
+    <input type="number" name="produtos[1][quantidade]" placeholder="Quantidade">
+    <input type="number" step="0.01" name="produtos[1][preco]" placeholder="Preço Unitário">
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
